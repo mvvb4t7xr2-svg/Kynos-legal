@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informativa sulla Privacy — Kynos Edu</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f3ee;
+      color: #1a1a1a;
+      line-height: 1.6;
+      padding: 24px 16px 48px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .logo-paw {
+      width: 48px;
+      height: 48px;
+      background: #2d6a4f;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1b4332;
+    }
+
+    header p {
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 2px;
+    }
+
+    .badge {
+      background: #fff;
+      border: 1px solid #d1d5db;
+      border-radius: 12px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .badge-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .badge-text strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .badge-text span {
+      font-size: 11px;
+      color: #6b7280;
+    }
+
+    .section {
+      background: #fff;
+      border: 0.5px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .section-icon {
+      font-size: 17px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .section h2 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .section p, .section ul {
+      font-size: 13px;
+      color: #4b5563;
+      line-height: 1.65;
+    }
+
+    .section ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .section ul li {
+      padding-left: 14px;
+      position: relative;
+      margin-bottom: 2px;
+    }
+
+    .section ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #2d6a4f;
+    }
+
+    .section p + p { margin-top: 10px; }
+    .section p + ul, .section ul + p { margin-top: 8px; }
+
+    a { color: #2d6a4f; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #9ca3af;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="logo-paw">🐾</div>
+    <div>
+      <h1>Informativa sulla Privacy</h1>
+      <p>Kynos Edu — App per educatori cinofili</p>
+    </div>
+  </header>
+
+  <div class="badge">
+    <span class="badge-icon">🛡️</span>
+    <div class="badge-text">
+      <strong>Versione 2.3 — Maggio 2026</strong>
+      <span>Valida per Kynos Edu (Firebase cloud sync)</span>
+    </div>
+  </div>
+
+  <!-- 1 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">ℹ️</span>
+      <h2>1. Titolare del trattamento</h2>
+    </div>
+    <p>Il titolare del trattamento dei dati è l'educatore cinofilo che utilizza
+    l'applicazione Kynos Edu. I dati inseriti nell'app sono sotto la sua responsabilità
+    ai sensi del Regolamento UE 2016/679 (GDPR). Kynos Edu è uno strumento software:
+    non è titolare dei dati dei clienti dell'educatore.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🗄️</span>
+      <h2>2. Dati raccolti e finalità</h2>
+    </div>
+    <p>L'app raccoglie e archivia:</p>
+    <ul>
+      <li>Dati account: nome, email, foto profilo (necessari per il login)</li>
+      <li>Dati clienti: nome, telefono, email, indirizzo, note sulla famiglia</li>
+      <li>Dati cani: razza, età, stato di salute, obiettivi educativi, documenti (PDF/immagini caricati dall'educatore)</li>
+      <li>Lezioni: titoli, date, luoghi, note</li>
+      <li>Pagamenti: importi, date, stato (incassato/in attesa)</li>
+      <li>Formazione: corsi, webinar e crediti formativi dell'educatore</li>
+      <li>Dati tecnici di diagnostica (Firebase Crashlytics): identificatore anonimo del dispositivo, modello, versione OS, stack trace in caso di crash, usati esclusivamente per migliorare la stabilità dell'app</li>
+      <li>Token push (Firebase Cloud Messaging): identificatore anonimo per l'invio di notifiche</li>
+      <li>Token App Check / App Attest: identificatore anti-frode che attesta l'autenticità dell'app, non collegato all'utente</li>
+    </ul>
+    <p>Tutti i dati sono usati esclusivamente per il funzionamento dell'app e non per
+    finalità commerciali, pubblicitarie o di profilazione. Non viene effettuato alcun
+    processo decisionale automatizzato.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">☁️</span>
+      <h2>3. Archiviazione cloud e trasferimenti extra-UE</h2>
+    </div>
+    <p>I dati sono sincronizzati su Google Firebase (Cloud Firestore e Cloud Storage),
+    un servizio cloud di Google LLC. I dati primari sono archiviati in server europei
+    (regione europe-west). Questo permette la sincronizzazione in tempo reale tra
+    dispositivi dello stesso account.</p>
+    <p>Poiché Google LLC ha sede negli Stati Uniti, alcuni trattamenti tecnici di
+    supporto (es. gestione dei servizi globali, sicurezza, logging operativo) possono
+    comportare trasferimenti extra-UE. Tali trasferimenti avvengono sulla base delle
+    Clausole Contrattuali Standard (SCC) approvate dalla Commissione Europea e delle
+    misure supplementari adottate da Google per garantire un livello di protezione
+    adeguato ai sensi del Capo V del GDPR.</p>
+    <p>Firebase è certificato ISO 27001, SOC 1/2/3 e conforme al GDPR. Maggiori
+    informazioni: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
+  </div>
+
+  <!-- 4 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔑</span>
+      <h2>4. Autenticazione</h2>
+    </div>
+    <p>L'accesso all'app può avvenire tramite:</p>
+    <ul>
+      <li>Email e password (gestite da Firebase Authentication)</li>
+      <li>Google Sign-In: condivide nome ed email con Firebase</li>
+      <li>Apple Sign-In: condivide nome ed email in forma opzionale (Apple può mascherare l'email reale)</li>
+    </ul>
+    <p>Le credenziali non vengono mai memorizzate in chiaro sul dispositivo.</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔗</span>
+      <h2>5. Condivisione schede clienti</h2>
+    </div>
+    <p>La funzionalità "Condividi cliente" permette di rendere accessibile la scheda
+    di un cliente a un altro educatore Kynos Edu tramite email. La condivisione:</p>
+    <ul>
+      <li>È sempre esplicita e avviata dall'educatore titolare della scheda</li>
+      <li>Richiede l'accettazione dell'altro educatore</li>
+      <li>Può essere revocata in qualsiasi momento dal titolare</li>
+      <li>Comprende: anagrafica cliente, dati dei cani, percorso educativo (lezioni e appunti)</li>
+      <li>Non comprende i dati di pagamento, che rimangono visibili esclusivamente al titolare della scheda</li>
+      <li>Non condivide dati con soggetti esterni all'app</li>
+    </ul>
+    <p>Il collega che riceve la condivisione opera come soggetto autonomo che tratta
+    i dati del cliente ai sensi del GDPR; è sua responsabilità informare il cliente
+    di questa condivisione prima di accettarla.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔔</span>
+      <h2>6. Notifiche push (FCM)</h2>
+    </div>
+    <p>L'app utilizza Firebase Cloud Messaging (FCM) per inviare notifiche push.
+    Il token FCM è anonimo e viene usato solo per consegnare notifiche relative
+    all'account (promemoria lezioni, inviti di condivisione).</p>
+    <p>Le notifiche possono essere disabilitate in qualsiasi momento dalle
+    Impostazioni → Notifiche, oppure dalle impostazioni di sistema del dispositivo.</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">👥</span>
+      <h2>7. Dati dei clienti dell'educatore (GDPR)</h2>
+    </div>
+    <p>I dati anagrafici e sanitari dei clienti (es. patologie del cane, note familiari)
+    sono dati personali ai sensi del GDPR. L'educatore, in qualità di titolare del
+    trattamento, è tenuto a:</p>
+    <ul>
+      <li>Informare i propri clienti del trattamento dei dati</li>
+      <li>Raccogliere il consenso ove necessario</li>
+      <li>Garantire la sicurezza dei dati (il PIN/password del dispositivo protegge l'accesso all'app)</li>
+      <li>Rispettare le richieste di cancellazione ("diritto all'oblio")</li>
+      <li>Informare esplicitamente il cliente prima di condividere la sua scheda con un collega, e ottenere il consenso qualora i dati trattati (es. patologie del cane, informazioni familiari) richiedano una base giuridica specifica</li>
+    </ul>
+  </div>
+
+  <!-- 8 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🗑️</span>
+      <h2>8. Conservazione e cancellazione dei dati</h2>
+    </div>
+    <p>Periodi di conservazione:</p>
+    <ul>
+      <li>Dati account e dati operativi (clienti, cani, lezioni, pagamenti, documenti): conservati per tutta la durata dell'account</li>
+      <li>Crashlytics: i report di crash sono conservati per 90 giorni e poi eliminati automaticamente</li>
+      <li>Log di autenticazione: conservati da Firebase Auth per il tempo necessario alla sicurezza dell'account</li>
+    </ul>
+    <p>L'educatore può eliminare in qualsiasi momento:</p>
+    <ul>
+      <li>Singoli clienti, cani, lezioni o pagamenti tramite l'app</li>
+      <li>L'intero account dalla sezione Impostazioni → Cancella account, oppure scrivendo a <a href="mailto:federico.barazzetta@gmail.com">federico.barazzetta@gmail.com</a></li>
+    </ul>
+    <p>La cancellazione dell'account tramite l'app elimina immediatamente e
+    permanentemente tutti i dati operativi: clienti, cani, lezioni, pagamenti,
+    formazione, promemoria, note, file caricati (foto e documenti PDF), condivisioni
+    attive e l'account di autenticazione. L'operazione è irreversibile.</p>
+    <p>Firebase mantiene backup di infrastruttura per un massimo di 30 giorni
+    esclusivamente per garantire la continuità del servizio cloud; tali backup non
+    sono accessibili né all'app né a terzi e vengono eliminati automaticamente alla scadenza.</p>
+    <p>In caso di revoca di una condivisione, l'accesso del collega alla scheda viene
+    rimosso immediatamente.</p>
+  </div>
+
+  <!-- 9 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔒</span>
+      <h2>9. Sicurezza</h2>
+    </div>
+    <p>I dati in transito sono cifrati con TLS 1.3. I dati a riposo su Firestore sono
+    cifrati con AES-256. Le regole di sicurezza Firestore garantiscono che ogni utente
+    possa accedere solo ai propri dati (o a quelli esplicitamente condivisi).</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">⚖️</span>
+      <h2>10. Base giuridica e diritti dell'interessato</h2>
+    </div>
+    <p>Il trattamento si basa sul contratto di utilizzo dell'app (art. 6.1.b GDPR) e
+    sull'interesse legittimo dell'educatore nella gestione della propria attività
+    professionale (art. 6.1.f GDPR).</p>
+    <p>Ai sensi degli artt. 15-22 GDPR, ogni utente ha diritto a:</p>
+    <ul>
+      <li>Accesso ai propri dati personali</li>
+      <li>Rettifica di dati inesatti</li>
+      <li>Cancellazione ("diritto all'oblio")</li>
+      <li>Limitazione del trattamento</li>
+      <li>Portabilità dei dati in formato strutturato</li>
+      <li>Opposizione al trattamento</li>
+      <li>Revoca del consenso in qualsiasi momento</li>
+    </ul>
+    <p>Per esercitare questi diritti è possibile scrivere a
+    <a href="mailto:federico.barazzetta@gmail.com">federico.barazzetta@gmail.com</a>.</p>
+    <p>Ogni utente ha inoltre il diritto di proporre reclamo all'Autorità di controllo
+    competente: in Italia il Garante per la protezione dei dati personali
+    (<a href="https://www.garanteprivacy.it" target="_blank">www.garanteprivacy.it</a>).</p>
+  </div>
+
+  <!-- 11 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔄</span>
+      <h2>11. Modifiche all'informativa</h2>
+    </div>
+    <p>Questa informativa può essere aggiornata. La versione corrente è la 2.3
+    (aggiornata il Maggio 2026). Le versioni precedenti riguardavano l'app iOS
+    con archiviazione locale.</p>
+  </div>
+
+  <!-- 12 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">✉️</span>
+      <h2>12. Contatti</h2>
+    </div>
+    <p>Per qualsiasi domanda sulla presente informativa, per esercitare i propri
+    diritti o per segnalazioni in materia di protezione dei dati personali è
+    possibile scrivere a:</p>
+    <p><a href="mailto:federico.barazzetta@gmail.com">federico.barazzetta@gmail.com</a></p>
+    <p>Risponderemo entro i termini previsti dal GDPR (di norma 30 giorni,
+    estendibili fino a 90 giorni per richieste complesse).</p>
+  </div>
+
+  <footer>
+    <p>© 2026 Kynos Edu · <a href="mailto:federico.barazzetta@gmail.com">federico.barazzetta@gmail.com</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
